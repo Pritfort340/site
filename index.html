@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RPG MMO Prototype (modd.io style)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="panel">
+      <h1>RPG MMO Prototype</h1>
+      <p class="muted">2D путешествие с нотками MMO</p>
+
+      <section>
+        <h2>Регион</h2>
+        <select id="regionSelect">
+          <option value="EU">EU</option>
+          <option value="NA">NA</option>
+          <option value="ASIA">ASIA</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>Игрок</h2>
+        <div id="playerStats"></div>
+        <p><strong>Управление:</strong> WASD / стрелки, <kbd>Space</kbd> — атака.</p>
+      </section>
+
+      <section>
+        <h2>Событие</h2>
+        <div id="eventInfo"></div>
+      </section>
+
+      <section>
+        <h2>Клан</h2>
+        <div id="clanInfo"></div>
+      </section>
+
+      <section>
+        <h2>Лидерборд (регион)</h2>
+        <ol id="leaderboard"></ol>
+      </section>
+    </aside>
+
+    <main class="game-wrap">
+      <canvas id="game" width="960" height="600"></canvas>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
